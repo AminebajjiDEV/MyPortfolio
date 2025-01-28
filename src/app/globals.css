@@ -17,8 +17,4 @@
         @apply lg:max-w-5xl;
         
     }
-    .contactContainer {
-        @apply lg:max-w-fit;
-        @apply lg:max-h-fit;
-    }
 }

@@ -80,11 +80,11 @@ export const HeroSection = () => {
             <div className="text-sm font-medium">Available for new projects</div>
           </div>
           <div className="max-w-lg mx-auto">
-            <h1 className="font-serif text-3xl text-center md:text-5xl mt-8 tracking-wide">Building Exceptional User Experience</h1>
-            <p className="mt-4 text-center text-white/60 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Commodi consequuntur veniam rem molestias minus cupiditate
-              consequuntur recusandae enim totam dolorem dolor. Iure, tempore.</p>
+            <h1 className="font-serif text-3xl text-center md:text-5xl mt-8 tracking-wide">Full-Stack Developer</h1>
+            <p className="mt-4 text-center text-white/60 md:text-lg">I am a Moroccan 23 year old Full-Stack Developer.</p>
+            <p className="text-center text-white/60 md:text-lg">I always aim to learn and contribute in Software Developement fields, with the Goal to build elegant, robust and complex software architectues</p>
           </div>
+         
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
             <Link href="#project-section">
               <button className="inline-flex items-center gap-2 text-gray-900 border border-white bg-white  px-6 h-12 rounded-xl">
@@ -98,13 +98,13 @@ export const HeroSection = () => {
             </Link>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-            <Link href={cvEnglish} download="cv">
+            <Link href={cvEnglish} target="_blank">
               <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl ">
                 <span className="font-semibold">English CV</span>
                 <ArrowDown className="size-5" />
               </button>
             </Link>
-            <Link href={cvFrench} download="cv">
+            <Link href={cvFrench} target="_blank">
               <button className="inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl ">
                 <span className="font-semibold">French CV</span>
                 <ArrowDown className="size-5" />

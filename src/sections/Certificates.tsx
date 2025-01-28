@@ -50,13 +50,13 @@ export const CertficateSection = () => {
           title="Online Courses I Completed"
           description="Studying new technologies or reinforcing old knowledge is my key to..." />
       </div>
-      <div className="mt-12 lg:mt-20 sm:w-[370px] md:w-[700px] lg:w-[1200px] flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)] py-4">
+      <div className="mt-12 lg:mt-20 sm:w-[400px] md:w-[700px] lg:w-[1200px] flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)] py-4">
         <div className="flex gap-8 flex-none animate-move-left [animation-duration:190s] hover:[animation-play-state:paused]">
           {[...new Array(10)].fill(0).map((_, index) => (
             <Fragment key={index}>
               {testimoniales.map(testimonial => (
-                <Card key={testimonial.name} className="max-w-[370px] md:max-w-md p-2 md:p-4 items-center transition duration-300 hover:rotate-1">
-                  <Link href={testimonial.link}>
+                <Card key={testimonial.name} className="max-w-[400px] md:max-w-md p-2 md:p-4 items-center transition duration-300 hover:rotate-1">
+                  <Link href={testimonial.link} target="_blank">
                     <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full rounded-3xl" />
 
                   </Link>

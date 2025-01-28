@@ -8,22 +8,19 @@ import { TapeSection } from "@/sections/Tape";
 import { CertficateSection } from "@/sections/Certificates";
 import { AcademicSection } from "@/sections/Academic";
 import { ProfessionalExperience } from "@/sections/Professional";
-import Transition from "@/components/TranstionWraper/page";
 
-export default function Home(router:any) {
+export default function Home(router: any) {
   return (
     <>
       <Header />
-      <Transition>
-        <HeroSection key={router.route} />
-        <ProjectsSection key={router.route} />
-        <TapeSection key={router.route} />
-        <CertficateSection key={router.route} />
-        <AcademicSection key={router.route} />
-        <ProfessionalExperience key={router.route} />
-        <AboutSection key={router.route} />
-        <ContactSection key={router.route} />
-      </Transition>
+      <HeroSection />
+      <ProjectsSection />
+      <TapeSection />
+      <CertficateSection />
+      <AcademicSection />
+      <ProfessionalExperience />
+      <AboutSection />
+      <ContactSection />
       <Footer />
     </>
   );

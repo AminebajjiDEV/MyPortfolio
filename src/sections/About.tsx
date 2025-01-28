@@ -216,7 +216,7 @@ const designToolsItems = [
 
 const hobbies = [
   {
-    title: 'Painting',
+    title: 'Graphic Design',
     emoji: '🎨​',
     left: "5%",
     top: "5%",
@@ -224,26 +224,44 @@ const hobbies = [
   {
     title: 'Photography',
     emoji: '📷​',
-    left: "50%",
+    left: "48%",
     top: "5%",
+  },
+  {
+    title: 'Camping',
+    emoji: '🏕️  ​',
+    left: "33%",
+    top: "43%",
   },
   {
     title: 'Hiking',
     emoji: '⛰️​',
-    left: "38%",
-    top: "43%",
+    left: "36%",
+    top: "28%",
+  },
+  {
+    title: 'Fishing',
+    emoji: '🎣​',
+    left: "62%",
+    top: "35%",
+  },
+  {
+    title: 'Riding',
+    emoji: '🚵​',
+    left: "23%",
+    top: "68%",
   },
   {
     title: 'Gaming',
     emoji: '🎮​',
     left: "10%",
-    top: "30%",
+    top: "38%",
   },
   {
     title: 'Music',
     emoji: '🎶​',
-    left: "65%",
-    top: "35%",
+    left: "30%",
+    top: "5%",
   },
   {
     title: 'Fitness',
@@ -254,8 +272,14 @@ const hobbies = [
   {
     title: 'Reading',
     emoji: '📚​',
-    left: "45%",
+    left: "41%",
     top: "70%",
+  },
+  {
+    title: 'Chess',
+    emoji: '♟️',
+    left: "63%",
+    top: "65%",
   },
 ]
 
