@@ -82,7 +82,7 @@ export const HeroSection = () => {
           <div className="max-w-lg mx-auto">
             <h1 className="font-serif text-3xl text-center md:text-5xl mt-8 tracking-wide">Full-Stack Developer</h1>
             <p className="mt-4 text-center text-white/60 md:text-lg">I am a Moroccan 23 year old Full-Stack Developer.</p>
-            <p className="text-center text-white/60 md:text-lg">I always aim to learn and contribute in Software Developement fields, with the Goal to build elegant, robust and complex software architectues</p>
+            <p className="text-center text-white/60 md:text-lg">I always aim to learn and contribute in Software Developement fields, with the Goal to build elegant, robust and complex software architecturs</p>
           </div>
          
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">

@@ -1,12 +1,11 @@
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import CheckCircle from "@/assets/icons/check-circle.svg";
-import Link from "next/link";
 
 import MajorelLogo from "@/assets/images/majiorel.jpg"
 import KiomaLogo from "@/assets/images/kiomaLogo.png";
 import IdgiLogo from "@/assets/images/idgiLogo.jpg";
 import Image from "next/image";
+import { title } from "process";
 
 const experiences = [
     {
@@ -15,11 +14,13 @@ const experiences = [
         type: 'On-Site',
         location: 'Casablanca, Morocco',
         date: 'March 2023 - October 2023',
-        tasks: 'Main Tasks:',
+        tasks: 'Tasks & Skills :',
         descriptions: [
-            { title: "Web Development, Client-Server Architecture, as well as Relational Databases." },
-            { title: "Algorithmic Logic, Installation and Configuration of Computer Systems." },
-            { title: "Communication Skills in English and French." },
+            {title: "Followed up on complaint files until resolutions."},
+            { title: "Handled client calls and complaints." },
+            { title: "Collaborated with team members for solutions." },
+            { title: "Developed strong customer relations skills." },
+            { title: "Improved listening and situation analysis." },
         ],
         logo: MajorelLogo,
     },
@@ -29,25 +30,27 @@ const experiences = [
         type: 'On-Site',
         location: 'Kenitra, Morocco',
         date: 'June 2022 - July 2022',
-        tasks: 'Main Tasks:',
+        tasks: 'Tasks & Skills :',
         descriptions: [
-            { title: "Web Development, Client-Server Architecture, as well as Relational Databases." },
-            { title: "Algorithmic Logic, Installation and Configuration of Computer Systems." },
-            { title: "Communication Skills in English and French." },
+            { title: "Created a WordPress landing page." },
+            { title: "Designed and integrated company details." },
+            { title: "Developed a custom website logo." },
+            { title: "Improved UX skills with WordPress." },
+            { title: "Enhanced graphic design with Photoshop, Illustrator." },
         ],
         logo: KiomaLogo,
     },
     {
-        title: 'Graphique Design Intern',
+        title: 'Graphic Design Intern',
         company: 'IDGI Center',
         type: 'On-Site',
         location: 'Kenitra, Morocco',
         date: 'June 2021 - July 2021',
-        tasks: 'Main Tasks:',
+        tasks: 'Tasks & Skills :',
         descriptions: [
-            { title: "Web Development, Client-Server Architecture, as well as Relational Databases." },
-            { title: "Algorithmic Logic, Installation and Configuration of Computer Systems." },
-            { title: "Communication Skills in English and French." },
+            { title: "Designed posters and tour flyers using Photoshop, Illustrator." },
+            { title: "Edited videos and podcasts for the Company's YouTube channel." },
+            { title: "Used Sony Vegas for editing." },
         ],
         logo: IdgiLogo,
     },
@@ -78,10 +81,10 @@ export const ProfessionalExperience = () => {
                             <hr className="border-t-4 border-white/10 sm:mt-4 w-48 md:mt-4 md:w-64 lg:w-80 lg:mt-6" />
                             <div className="mt-4 mb-4 lg:mb-0 px-6 w-full">
                                 <h4 className="font-semibold text-md sm:text-sm sm:text-center mt-1 md:text-xl md:text-left md:mt-2 md:mx-2">{experience.tasks}</h4>
-                                <ul className="flex flex-col sm:items-center md:text-left lg:text-left gap-4 mt-2 mb-2">
+                                <ul className="flex flex-col sm:justify-center md:text-left lg:text-left gap-4 mt-2 mb-2">
                                     {experience.descriptions.map((description) => (
-                                        <li className="flex gap-1 text-sm md:text-base sm:text-center lg:text-xl text-white/50" key={description.title}>
-                                            <CheckCircle className="hidden md:block lg:block size-5 md:size-6" />
+                                        <li className="flex gap-1 text-sm md:text-base lg:text-xl text-white/50" key={description.title}>
+                                            <span className="mx-2">&bull; </span>
                                             <span className="md:w-[27rem] lg:w-[41rem]">{description.title}</span>
                                         </li>
                                     ))}
