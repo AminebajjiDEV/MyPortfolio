@@ -1,9 +1,16 @@
-import memojiImage from "@/assets/images/file.png";
+import myImage from "@/assets/images/file.png";
 import Image from "next/image";
 import ArrowDown from '@/assets/icons/arrow-down.svg';
 import grainImage from "@/assets/images/grain.jpg";
-import StarIcon from "@/assets/icons/star.svg";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
+import LaptopIcon from "@/assets/icons/laptop.svg";
+import ChessKnightIcon from "@/assets/icons/chees-knight.svg";
+import BicycleIcon from "@/assets/icons/bicycle.svg";
+import HeadphonesIcon from "@/assets/icons/headphones.svg";
+import ControllerIcon from "@/assets/icons/controller.svg";
+import CameraIcon from "@/assets/icons/camera.svg";
+import BookIcon from "@/assets/icons/books.svg";
+import GearIcon from "@/assets/icons/mechanism.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import Link from "next/link";
 
@@ -22,57 +29,65 @@ export const HeroSection = () => {
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})`, }}></div>
         <div className="size-[640px] hero-ring"></div>
         <div className="size-[840px] hero-ring"></div>
-        <div className="size-[1040px] hero-ring"></div>
-        <div className="size-[1240px] hero-ring"></div>
+        <div className="size-[1040px] hero-hexagone rotate-45"></div>
+        <div className="size-[1240px] hero-hexagone"></div>
 
-        {/* StarIcon */}
-        <HeroOrbit size={550} rotation={20} shouldOrbit orbitDuration="38s" shouldSpin spinDuration="6s">
-          <StarIcon className="size-12 text-emerald-300" />
+        {/* Icons */}
+        <HeroOrbit size={510} rotation={-45} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <BicycleIcon className="size-10 opacity-20" />
         </HeroOrbit>
 
-        <HeroOrbit size={550} rotation={98} shouldOrbit orbitDuration="38s" shouldSpin spinDuration="6s">
-          <StarIcon className="size-8 text-emerald-300" />
+        <HeroOrbit size={510} rotation={-225} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <HeadphonesIcon className="size-10 opacity-20" />
         </HeroOrbit>
-        <HeroOrbit size={800} rotation={-172} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="6s">
-          <StarIcon className="size-28 text-emerald-300" />
+
+        <HeroOrbit size={510} rotation={-135} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <ChessKnightIcon className="size-10 opacity-20" />
+        </HeroOrbit>
+
+        <HeroOrbit size={510} rotation={-180} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <LaptopIcon className="size-10 opacity-20" />
+        </HeroOrbit>
+
+        <HeroOrbit size={510} rotation={0} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <ControllerIcon className="size-10 opacity-20" />
+        </HeroOrbit>
+
+        <HeroOrbit size={510} rotation={45} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <CameraIcon className="size-10 opacity-20" />
+        </HeroOrbit>
+
+        <HeroOrbit size={510} rotation={90} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <BookIcon className="size-10 opacity-20" />
+        </HeroOrbit>
+
+        <HeroOrbit size={510} rotation={-90} shouldOrbit orbitDuration="46s" shouldSpin spinDuration="10s">
+          <GearIcon className="size-10 opacity-20" />
         </HeroOrbit>
 
         {/* SparkleIcon */}
-        <HeroOrbit size={430} rotation={-14} shouldOrbit orbitDuration="30s" shouldSpin spinDuration="3s">
+        <HeroOrbit size={550} rotation={-14} shouldOrbit orbitDuration="44s" shouldSpin spinDuration="3s">
           <SparkleIcon className="size-8 text-emerald-300/20" />
         </HeroOrbit>
 
-        <HeroOrbit size={440} rotation={79} shouldOrbit orbitDuration="32s" shouldSpin spinDuration="3s">
+        <HeroOrbit size={550} rotation={79} shouldOrbit orbitDuration="44s" shouldSpin spinDuration="3s">
           <SparkleIcon className="size-5 text-emerald-300/20" />
         </HeroOrbit>
 
-        <HeroOrbit size={530} rotation={-178} shouldOrbit orbitDuration="36s" shouldSpin spinDuration="3s">
+        <HeroOrbit size={550} rotation={278} shouldOrbit orbitDuration="44s" shouldSpin spinDuration="3s">
           <SparkleIcon className="size-10 text-emerald-300/20" />
         </HeroOrbit>
 
-        <HeroOrbit size={710} rotation={-144} shouldOrbit orbitDuration="44s" shouldSpin spinDuration="3s">
+        <HeroOrbit size={550} rotation={144} shouldOrbit orbitDuration="44s" shouldSpin spinDuration="3s">
           <SparkleIcon className="size-10 text-emerald-300/20" />
         </HeroOrbit>
-
-        {/* CircleIcon */}
-        <HeroOrbit size={520} rotation={-41} shouldOrbit orbitDuration="34s">
-          <div className="size-3 bg-emerald-300/20 rounded-full" />
-        </HeroOrbit>
-
-        <HeroOrbit size={650} rotation={-5} shouldOrbit orbitDuration="40s">
-          <div className="size-3 bg-emerald-300/20 rounded-full" />
-        </HeroOrbit>
-        <HeroOrbit size={710} rotation={85} shouldOrbit orbitDuration="42s">
-          <div className="size-3 bg-emerald-300/20 rounded-full" />
-        </HeroOrbit>
-
 
 
       </div>
       <div className="container">
         <div className="flex flex-col items-center relative z-10">
-          <Image src={memojiImage} className="size-[400px] rounded-5xl"
-            alt="Person peeking from behind laptop" />
+          <Image src={myImage} className="size-[400px]"
+            alt="Personal Picture" />
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
@@ -84,7 +99,7 @@ export const HeroSection = () => {
             <p className="mt-4 text-center text-white/60 md:text-lg">I am a Moroccan 23 year old Full-Stack Developer.</p>
             <p className="text-center text-white/60 md:text-lg">I always aim to learn and contribute in Software Developement fields, with the Goal to build elegant, robust and complex software architecturs</p>
           </div>
-         
+
           <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
             <Link href="#project-section">
               <button className="inline-flex items-center gap-2 text-gray-900 border border-white bg-white  px-6 h-12 rounded-xl">
