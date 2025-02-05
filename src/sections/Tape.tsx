@@ -2,18 +2,27 @@ import StarIcon from '@/assets/icons/star.svg';
 import { Fragment } from 'react';
 
 const words = [
+  "Full-Stack",
   "Performant",
-  "Accessible",
   "Secure",
-  "Interactive",
   "Scalable",
   "Responsive",
-  "User Friendly",
-  "Search Optimized",
-  "Usable",
-  "Reliable",
+  "Interactive",
+  "User-Centric",
+  "API-Driven",
+  "Modular",
+  "Efficient",
+  "Cloud-Native",
+  "Database-Optimized",
+  "Dynamic",
+  "Version-Controlled",
+  "Cross-Platform",
+  "Containerized",
+  "Automated",
+  "State-Managed",
+  "RESTful",
+  "Robust",
 ];
-
 
 
 

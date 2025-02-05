@@ -106,7 +106,7 @@ export const HeroSection = () => {
                 <span className="font-semibold">🔎 Explore My Work</span>
               </button>
             </Link>
-            <Link href={connectLink}>
+            <Link href={connectLink} target="_blank">
               <button className="inline-flex items-center gap-2 text-gray-900 border border-white bg-white  px-6 h-12 rounded-xl">
                 <span className="font-semibold">👋 Let's Connect</span>
               </button>

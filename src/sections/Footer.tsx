@@ -23,7 +23,7 @@ export const Footer = () => {
           <div className="text-white/40">Amine Bajji &copy; {yearNow}. All rights reserved. </div>
           <nav className="flex flex-col md:flex-row items-center gap-8">
             {footerLinks.map(link => (
-              <Link href={link.href} key={link.title} className="inline-flex items-center gap-1.5" >
+              <Link href={link.href} key={link.title} className="inline-flex items-center gap-1.5" target="_blank">
                 <span className="font-semibold">{link.title}</span>
                 <ArrowUpRightIcon className="size-4" />
               </Link>

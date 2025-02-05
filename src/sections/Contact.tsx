@@ -72,10 +72,13 @@ export const Contact = () => {
 
 
     return (
-        <div id="contact" className="sm:flex-col lg:w-[1440px] md:w-[810px] sm:w-full overflow-x-clip">
-            <div className="flex lg:flex-row md:flex-col sm:flex-col h-screen w-screen">
-                <div className="relative flex flex-col items-center sm:justify-center lg:pb-0 md:pb-20 sm:pb-20 z-10">
-                    <div className="flex flex-col p-8 lg:pt-40 pt-20 lg:ml-10 md:items-center sm:items-center">
+        <div id="contact" className="lg:h-screen lg:w-screen md:w-[810px] sm:flex-col sm:w-full overflow-x-clip">
+            <div className="lg:grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 h-full w-full">
+                <div className="relative flex flex-col items-center w-full h-full sm:justify-center lg:pb-0 md:pb-20 sm:pb-20 ">
+                    <div className="absolute h-[100%] w-[100%]  inset-0 -z-10 opacity-35 bg-no-repeat bg-cover lg:[mask-image:linear-gradient(to_left,transparent,black_1%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)] sm:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)]"
+                        style={{ backgroundImage: `url(${ContactBG.src})`, height: "100%" }}>
+                    </div>
+                    <div className="flex flex-col h-[100%] w-[100%]  p-8 lg:pt-40 pt-20 lg:ml-10 md:items-center sm:items-center">
                         <h2 className="font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-3xl md:text-5xl md:text-center lg:text-left mt-10">Get in Touch</h2>
                         <p className="text-white/60 max-w-md sm:text-center md:text-center md:text-lg lg:text-xl lg:text-left mt-8">Want to discuss ideas or future work opportunities. Leave me a message and i'll get back to you as soon as possible!</p>
                         <div className="flex flex-col mt-6">
@@ -93,11 +96,9 @@ export const Contact = () => {
                             </button>
                         </Link>
                     </div>
-                    <div className="absolute inset-0 -z-10 opacity-35 bg-no-repeat bg-cover lg:[mask-image:linear-gradient(to_left,transparent,black_1%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)] sm:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)]"
-                        style={{ backgroundImage: `url(${ContactBG.src})`, height: "100%" }}>
-                    </div>
+
                 </div>
-                <div className="relative flex flex-col z-0 items-center lg:border-l-2 lg:border-emerald-300/20 lg:border-t-0 md:border-t-2 md:border-emerald-300/20">
+                <div className="relative flex flex-col items-center w-full h-full lg:border-l-2 lg:border-emerald-300/20 lg:border-t-0 md:border-t-2 md:border-emerald-300/20">
                     <div className="flex flex-col h-[100%] w-[100%] p-4 lg:max-w-[42rem] md:max-w-full sm:max-w-sm">
                         <form className="flex flex-col p-8 lg:pt-40 pt-20 ml-10 sm:m-0 sm:p-2 sm:items-center md:items-center lg:w-full gap-4" onSubmit={handleSubmit}>
                             <div className="flex flex-row lg:w-[450px] md:w-[450px] sm:w-full sm:flex-col gap-8">

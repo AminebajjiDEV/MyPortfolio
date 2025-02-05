@@ -36,7 +36,7 @@ const portfolioProjects = [
       { title: "client-server communication via Axios." },
       { title: "Retrieve, manipulate & present data." },
     ],
-    link: "https://weatherbird.onrender.com/search",
+    link: "https://weatherbird.onrender.com",
     gitRepo: "https://github.com/AminebajjiDEV/WeatherBird--APP",
     image: weatherbirdImage,
   },
