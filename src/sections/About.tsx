@@ -29,7 +29,7 @@ import GithubIcon from "@/assets/icons/tools/github.svg";
 import VisualIcon from "@/assets/icons/tools/visual-studio-code-1.svg";
 import IntelijIcon from "@/assets/icons/tools/intellij-idea-1.svg";
 import EclipseIcon from "@/assets/icons/tools/eclipse-11.svg";
-import PostmanIcon from "@/assets/icons/tools/postman.svg";
+import PostmanIcon from "@/assets/icons/tools/Postman.svg";
 import XampIcon from "@/assets/icons/tools/xampp.svg";
 
 
@@ -51,7 +51,6 @@ import { CardHeader } from "@/components/CardHeader";
 import { ToolboxItems } from "@/components/ToolboxItems";
 import { motion } from "framer-motion";
 import { useRef } from "react";
-import { title } from "process";
 
 
 const frontEndItems = [

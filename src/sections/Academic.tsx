@@ -2,8 +2,8 @@ import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
 import uitLogo from "@/assets/images/logo-UIT.png";
-import udeLogo from "@/assets/images/Udemy New.png";
-import ifgiaLogo from "@/assets/images/IFGIA Logo.png";
+import udeLogo from "@/assets/images/Udemy_New.png";
+import ifgiaLogo from "@/assets/images/IFGIA_LOGO.png";
 import Link from "next/link";
 import CheckCircle from "@/assets/icons/check-circle.svg";
 
