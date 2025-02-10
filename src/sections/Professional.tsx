@@ -1,11 +1,11 @@
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
 
-import MajorelLogo from "@/assets/images/majiorel.jpg"
-import KiomaLogo from "@/assets/images/kiomaLogo.png";
-import IdgiLogo from "@/assets/images/idgiLogo.jpg";
+import MajorelLogo from "@/assets/images/majiorel.webp"
+import KiomaLogo from "@/assets/images/kiomaLogo.webp";
+import IdgiLogo from "@/assets/images/idgiLogo.webp";
 import Image from "next/image";
-import { title } from "process";
+
 
 const experiences = [
     {

@@ -3,7 +3,7 @@
 import phoneIcon from "@/assets/icons/phone-svgrepo-com.svg";
 import whatsAppIcon from "@/assets/icons/whatsapp-svgrepo-com.svg";
 import emailIcon from "@/assets/icons/email-svgrepo-com.svg";
-import ContactBG from "@/assets/images/ContactBG.png";
+import ContactBG from "@/assets/images/ContactBG.webp";
 import { InfoIcon } from "@/components/InfoIcon";
 import { useState } from "react";
 import { toast, Toaster } from "sonner"

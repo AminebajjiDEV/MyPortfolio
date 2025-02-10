@@ -1,8 +1,8 @@
-import ociCert from "@/assets/images/eCertificate OCI_page-0001.jpg";
-import phpCert from "@/assets/images/PHP Tutorial Beginner to Advanced-UC-0685ecf3-8c87-410c-bb5f-39043ef0b188_page-0001.jpg";
-import scrumCourse from "@/assets/images/Master Agile and Scrum Key principles and preparation for PSM  and PSPO certifications_page-0001.jpg";
-import ibmCourse from "@/assets/images/InstructLab Democratizing AI Models at Scale_Course completion certificate_page-0001.jpg";
-import webDevCert from "@/assets/images/WEB DEV CERTIFICATE_page-0001.jpg";
+import ociCert from "@/assets/images/eCertificate OCI_page-0001.webp";
+import phpCert from "@/assets/images/PHP Tutorial Beginner to Advanced-UC-0685ecf3-8c87-410c-bb5f-39043ef0b188_page-0001.webp";
+import scrumCourse from "@/assets/images/Master Agile and Scrum Key principles and preparation for PSM  and PSPO certifications_page-0001.webp";
+import ibmCourse from "@/assets/images/InstructLab Democratizing AI Models at Scale_Course completion certificate_page-0001.webp";
+import webDevCert from "@/assets/images/WEB DEV CERTIFICATE_page-0001.webp";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";

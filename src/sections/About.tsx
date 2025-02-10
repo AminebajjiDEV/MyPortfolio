@@ -1,7 +1,7 @@
 "use client"
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
-import MeditationsBC from "@/assets/images/MAM BC.png";
+import MeditationsBC from "@/assets/images/MAM_BC.webp";
 
 import JavascripIcon from "@/assets/icons/front-end/square-js.svg";
 import HTMLIcon from "@/assets/icons/front-end/html5.svg";
