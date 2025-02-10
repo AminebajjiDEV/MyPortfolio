@@ -80,7 +80,7 @@ export const Contact = () => {
                     </div>
                     <div className="flex flex-col h-[100%] w-[100%]  p-8 lg:pt-40 pt-20 lg:ml-10 md:items-center sm:items-center">
                         <h2 className="font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-3xl md:text-5xl md:text-center lg:text-left mt-10">Get in Touch</h2>
-                        <p className="text-white/60 max-w-md sm:text-center md:text-center md:text-lg lg:text-xl lg:text-left mt-8">Want to discuss ideas or future work opportunities. Leave me a message and i'll get back to you as soon as possible!</p>
+                        <p className="text-white/60 max-w-md sm:text-center md:text-center md:text-lg lg:text-xl lg:text-left mt-8">Want to discuss ideas or future work opportunities. Leave me a message and i&apos;ll get back to you as soon as possible!</p>
                         <div className="flex flex-col mt-6">
                             {infos.map((info, index) => (
                                 <div className="flex flex-inline items-center p-4" key={index} >
