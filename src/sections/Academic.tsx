@@ -77,6 +77,8 @@ export const AcademicSection = () => {
                   <Image
                     src={academic.schoolLogo}
                     alt={academic.title}
+                    placeholder="blur"
+                    fill
                     className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
                 </div>
                 <div className="flex flex-col px-6 sm:px-2 sm:items-center w-[420px] lg:w-[550px] lg:m-6">
