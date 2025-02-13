@@ -70,15 +70,13 @@ export const AcademicSection = () => {
       <div className="container">
         <SectionHeader eyebrow="Academic Curriculum" title="My Journey As A Student" description="You can find below the Academic courses I enrolled in after highschool" />
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
-          {academics.map((academic) => (
-            <Card key={academic.diploma} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
+          {academics.map((academic, index) => (
+            <Card key={index} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
               <div className="flex md:flex-row sm:flex-col sm:items-center">
                 <div className="relative md:w-[250px] md:h-60 lg:size-[250px] sm:m-4 sm:mb-2 lg:m-2">
                   <Image
                     src={academic.schoolLogo}
                     alt={academic.title}
-                    placeholder="blur"
-                    fill
                     className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
                 </div>
                 <div className="flex flex-col px-6 sm:px-2 sm:items-center w-[420px] lg:w-[550px] lg:m-6">

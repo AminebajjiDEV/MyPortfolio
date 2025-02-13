@@ -3,7 +3,7 @@
 import phoneIcon from "@/assets/icons/phone-svgrepo-com.svg";
 import whatsAppIcon from "@/assets/icons/whatsapp-svgrepo-com.svg";
 import emailIcon from "@/assets/icons/email-svgrepo-com.svg";
-import ContactBG from "@/assets/images/ContactBG.webp";
+import { ContactBackground } from "@/components/customs/ContactBackground";
 import { InfoIcon } from "@/components/InfoIcon";
 import { useState } from "react";
 import { toast, Toaster } from "sonner"
@@ -75,8 +75,8 @@ export const Contact = () => {
         <div id="contact" className="lg:h-screen lg:w-screen md:w-[810px] sm:flex-col sm:w-full overflow-x-clip">
             <div className="lg:grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 h-full w-full">
                 <div className="relative flex flex-col items-center w-full h-full sm:justify-center lg:pb-0 md:pb-20 sm:pb-20 ">
-                    <div className="absolute h-[100%] w-[100%]  inset-0 -z-10 opacity-35 bg-no-repeat bg-cover lg:[mask-image:linear-gradient(to_left,transparent,black_1%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)] sm:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)]"
-                        style={{ backgroundImage: `url(${ContactBG.src})`, height: "100%" }}>
+                    <div className="absolute h-[100%] w-[100%]  inset-0 -z-10 opacity-35 bg-no-repeat bg-cover lg:[mask-image:linear-gradient(to_left,transparent,black_1%,black_90%,transparent)] md:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)] sm:[mask-image:linear-gradient(to_bottom,transparent,black_1%,black_98%,transparent)]">
+                        <ContactBackground />
                     </div>
                     <div className="flex flex-col h-[100%] w-[100%]  p-8 lg:pt-40 pt-20 lg:ml-10 md:items-center sm:items-center">
                         <h2 className="font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-3xl md:text-5xl md:text-center lg:text-left mt-10">Get in Touch</h2>

@@ -4,6 +4,7 @@ import scrumCourse from "@/assets/images/Master Agile and Scrum Key principles a
 import ibmCourse from "@/assets/images/InstructLab Democratizing AI Models at Scale_Course completion certificate_page-0001.webp";
 import webDevCert from "@/assets/images/WEB DEV CERTIFICATE_page-0001.webp";
 import Image from "next/image";
+import { BluredImage} from "@/components/customs/BluredImage";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { Fragment } from "react";
@@ -35,10 +36,6 @@ const certificates = [
     avatar: scrumCourse,
     link: "https://ude.my/UC-513333be-6c02-4acd-8f61-ad913ba2075a",
   },
-  // {
-  //   name: "efset-cert",
-  //   avatar: efsetCert,
-  // }
 ];
 
 export const CertficateSection = () => {

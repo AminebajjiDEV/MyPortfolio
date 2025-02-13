@@ -90,8 +90,9 @@ export const HeroSection = () => {
             <Image
               src={myImage}
               className="size-[250px]"
-              fill  
               placeholder="blur"
+              fill
+              loading="lazy"
               alt="Personal Picture" />
           </div>
 

@@ -63,8 +63,8 @@ export const ProfessionalExperience = () => {
             <div className="container">
                 <SectionHeader eyebrow="Professional Experiences" title="My Journey As A Professional" description="You can find below my recent work experiences" />
                 <div className="flex flex-col mt-10 gap-20 md:mt-20">
-                    {experiences.map((experience) => (
-                        <Card key={experience.title} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
+                    {experiences.map((experience, index) => (
+                        <Card key={index} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
                             <div className="flex md:flex-row sm:flex-col sm:items-center">
                                 <div className="relative sm:m-4 sm:mb-2 lg:m-2">
                                     <Image 
