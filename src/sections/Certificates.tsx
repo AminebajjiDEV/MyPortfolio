@@ -48,7 +48,7 @@ export const CertficateSection = () => {
         <SectionHeader
           eyebrow="Certificates"
           title="Online Courses I Completed"
-          description="Studying new technologies or reinforcing old knowledge is my key to..." />
+          description="Studying new technologies or reinforcing old knowledge is my key to continuous progress" />
       </div>
       <div className="mt-12 lg:mt-20 sm:w-[400px] md:w-[700px] lg:w-[1200px] flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)] py-4">
         <div className="flex gap-8 flex-none animate-move-left [animation-duration:190s] hover:[animation-play-state:paused]">
@@ -63,7 +63,6 @@ export const CertficateSection = () => {
                         alt={certificate.name}
                         placeholder="blur"
                         fill
-                        unoptimized
                         className="max-h-full rounded-3xl" />
                     </div>
                   </Link>
