@@ -23,7 +23,7 @@ export const HeroSection = () => {
 
 
   return (
-    <div className="py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip" id="home">
+    <div className="py-32 md:py-48 lg:pb-60 lg:pt-24 relative z-0 overflow-x-clip" id="home">
 
       <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]">
         <div className="absolute inset-0 -z-30 opacity-5" style={{ backgroundImage: `url(${grainImage.src})`, }}></div>
@@ -86,8 +86,15 @@ export const HeroSection = () => {
       </div>
       <div className="container">
         <div className="flex flex-col items-center relative z-10">
-          <Image src={myImage} className="size-[400px]"
-            alt="Personal Picture" />
+          <div className="relative w-[250px] h-[250px] object-cover">
+            <Image
+              src={myImage}
+              className="size-[250px]"
+              fill  
+              placeholder="blur"
+              alt="Personal Picture" />
+          </div>
+
           <div className="bg-gray-950 border border-gray-800 px-4 py-1.5 inline-flex items-center gap-4 rounded-lg">
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 absolute inset-0 rounded-full animate-ping-large"></div>
@@ -95,7 +102,7 @@ export const HeroSection = () => {
             <div className="text-sm font-medium">Available for new projects</div>
           </div>
           <div className="max-w-lg mx-auto">
-            <h1 className="font-serif text-3xl text-center md:text-5xl mt-8 tracking-wide">Full-Stack Developer</h1>
+            <h1 className="font-serif text-3xl text-center md:text-5xl mt-4 tracking-wide">Full-Stack Developer</h1>
             <p className="mt-4 text-center text-white/60 md:text-lg">I am a Moroccan 23 year old Full-Stack Developer.</p>
             <p className="text-center text-white/60 md:text-lg">I always aim to learn and contribute in Software Developement fields, with the Goal to build elegant, robust and complex software architecturs</p>
           </div>

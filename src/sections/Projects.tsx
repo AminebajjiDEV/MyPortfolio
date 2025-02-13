@@ -122,7 +122,7 @@ export const ProjectsSection = () => {
                 <div className="relative">
                   <Image src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-2 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
+                    className="mt-8 -mb-2 md:-mb-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none" />
                 </div>
               </div>
             </Card>

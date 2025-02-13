@@ -1,9 +1,12 @@
 import { Card } from "@/components/Card";
 import { SectionHeader } from "@/components/SectionHeader";
+
 import Image from "next/image";
-import uitLogo from "@/assets/images/logo-UIT.webp";
+import uitLogo from "@/assets/images/logo_uit.webp";
 import udeLogo from "@/assets/images/Udemy_New.webp";
 import ifgiaLogo from "@/assets/images/IFGIA_LOGO.webp";
+
+
 import Link from "next/link";
 import CheckCircle from "@/assets/icons/check-circle.svg";
 
@@ -71,7 +74,10 @@ export const AcademicSection = () => {
             <Card key={academic.diploma} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
               <div className="flex md:flex-row sm:flex-col sm:items-center">
                 <div className="relative sm:m-4 sm:mb-2 lg:m-2">
-                  <Image src={academic.schoolLogo} alt={academic.title} className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
+                  <Image
+                    src={academic.schoolLogo}
+                    alt={academic.title}
+                    className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
                 </div>
                 <div className="flex flex-col px-6 sm:px-2 sm:items-center w-[420px] lg:w-[550px] lg:m-6">
                   <h3 className="font-serif text-2xl w-full sm:text-[1.3rem] sm:text-center sm:w-[20rem] mt-2 lg:mt-0 md:text-4xl md:text-center md:mt-5 md:w-[24rem] lg:w-[30rem]">{academic.diploma}</h3>

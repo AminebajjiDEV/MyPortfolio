@@ -9,7 +9,7 @@ import { Card } from "@/components/Card";
 import { Fragment } from "react";
 import Link from "next/link";
 
-const testimoniales = [
+const certificates = [
   {
     name: "web-Dev-cert",
     avatar: webDevCert,
@@ -54,11 +54,18 @@ export const CertficateSection = () => {
         <div className="flex gap-8 flex-none animate-move-left [animation-duration:190s] hover:[animation-play-state:paused]">
           {[...new Array(10)].fill(0).map((_, index) => (
             <Fragment key={index}>
-              {testimoniales.map(testimonial => (
-                <Card key={testimonial.name} className="max-w-[400px] md:max-w-md p-2 md:p-4 items-center transition duration-300 hover:rotate-1">
-                  <Link href={testimonial.link} target="_blank">
-                    <Image src={testimonial.avatar} alt={testimonial.name} className="max-h-full rounded-3xl" />
-
+              {certificates.map(certificate => (
+                <Card key={certificate.name} className="max-w-[400px] md:max-w-md p-2 md:p-4 items-center transition duration-300 hover:rotate-1">
+                  <Link href={certificate.link} target="_blank" >
+                    <div className="relative w-[416px] h-[321.45px] object-cover">
+                      <Image
+                        src={certificate.avatar}
+                        alt={certificate.name}
+                        placeholder="blur"
+                        fill
+                        unoptimized
+                        className="max-h-full rounded-3xl" />
+                    </div>
                   </Link>
                 </Card>
               ))}
