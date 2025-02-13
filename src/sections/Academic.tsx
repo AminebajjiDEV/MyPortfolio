@@ -82,7 +82,7 @@ export const AcademicSection = () => {
                 <div className="flex flex-col px-6 sm:px-2 sm:items-center w-[420px] lg:w-[550px] lg:m-6">
                   <h3 className="font-serif text-2xl w-full sm:text-[1.3rem] sm:text-center sm:w-[20rem] mt-2 lg:mt-0 md:text-4xl md:text-center md:mt-5 md:w-[24rem] lg:w-[30rem]">{academic.diploma}</h3>
                   <h4 className="font-serif text-2xl sm:text-[1.2rem] sm:text-center sm:w-[20rem] mt-1 md:text-2xl md:mt-2 md:w-[24rem] lg:w-[25rem]">{academic.title}</h4>
-                  <span className="text-sm w-60 mt-4 lg:w-[28rem] font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">{academic.school}  ( <Link href={academic.link} className="underline">{academic.abrev}</Link> )</span>
+                  <span className="text-sm w-60 mt-4 lg:w-[28rem] font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">{academic.school}  ( <Link href={academic.link} target="_blank" className="underline">{academic.abrev}</Link> )</span>
                   <span className="text-sm w-60 mt-2 font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text text-center">{academic.timeLine}</span>
                 </div>
 
