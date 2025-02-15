@@ -81,8 +81,11 @@ export const AcademicSection = () => {
                     src={academic.schoolLogo}
                     blurDataURL={academic.blurUrl}
                     placeholder="blur"
+                    width={250}
+                    height={250}
                     alt={academic.title}
-                    className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
+                    className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl"
+                  />
                 </div>
                 <div className="flex flex-col px-6 sm:px-2 sm:items-center w-[420px] lg:w-[550px] lg:m-6">
                   <h3 className="font-serif text-2xl w-full sm:text-[1.3rem] sm:text-center sm:w-[20rem] mt-2 lg:mt-0 md:text-4xl md:text-center md:mt-5 md:w-[24rem] lg:w-[30rem]">{academic.diploma}</h3>

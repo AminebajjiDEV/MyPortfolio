@@ -69,13 +69,15 @@ export const ProfessionalExperience = () => {
                     {experiences.map((experience, index) => (
                         <Card key={index} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
                             <div className="flex md:flex-row sm:flex-col sm:items-center">
-                                <div className="relative sm:m-4 sm:mb-2 lg:m-2">
+                                <div className="relative w-[250px] h-60 sm:m-4 sm:mb-2 lg:m-2 bg-white rounded-3xl overflow-hidden">
                                     <Image
                                         src={experience.logo}
                                         blurDataURL={experience.blurUrl}
                                         placeholder="blur"
+                                        fill
                                         alt={experience.title}
-                                        className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
+                                        className="object-cover"
+                                    />
                                 </div>
                                 <div className="flex flex-col px-6 sm:px-2 sm:items-center w-[420px] lg:w-[590px] lg:m-6">
                                     <h3 className="font-serif text-2xl w-full sm:text-[1.3rem] sm:text-center sm:w-[20rem] mt-2 lg:mt-0 md:text-4xl md:text-center md:mt-5 md:w-[23rem] lg:w-[30rem]">

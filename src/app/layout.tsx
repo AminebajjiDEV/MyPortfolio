@@ -24,7 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={twMerge(inter.variable, calistoga.variable, "bg-gray-900 text-white antialiased font-sans")}>
-        <Transition>{children}</Transition>
+        {/* <Transition>{children}</Transition> */}
+        {children}
       </body>
     </html>
   );

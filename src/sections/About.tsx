@@ -344,12 +344,13 @@ export const AboutSection = () => {
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader title="My Reads"
                 description="One of my favorite books shaping my perspective." />
-              <div className="w-32 mx-auto mt-2 md:mt-0">
+              <div className="relative h-44 w-32 mx-auto mt-2 md:mt-0 border border-gray-700 rounded-xl overflow-hidden">
                 <Image
                   src={MeditationsBC}
                   alt="book cover"
                   placeholder="blur"
-                  className="border border-gray-700 rounded-xl"
+                  fill
+                  className="object-cover"
                 />
               </div>
 

@@ -86,13 +86,12 @@ export const HeroSection = () => {
       </div>
       <div className="container">
         <div className="flex flex-col items-center relative z-10">
-          <div className="relative w-[250px] h-[250px] object-cover">
+          <div className="relative w-[250px] h-[250px]">
             <Image
               src={myImage}
-              className="size-[250px]"
+              className="object-cover"
               placeholder="blur"
               fill
-              loading="lazy"
               alt="Personal Picture" />
           </div>
 
