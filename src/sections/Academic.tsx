@@ -26,6 +26,7 @@ const academics = [
       { title: "UNIX Operating Systems( Ubuntu, Kali, Fedora, Centos )." },
     ],
     schoolLogo: uitLogo,
+    blurUrl: "LAOzGKV@~qyD_3j]t7of%#kWI9a0",
 
   },
   {
@@ -42,6 +43,7 @@ const academics = [
       { title: "Bash Command Line, Git, Version Control & Deployment with GitHub Pages." },
     ],
     schoolLogo: udeLogo,
+    blurUrl: "LMNwNEV]?bt7-;a#ofoe~qoeITae",
 
   },
   {
@@ -58,6 +60,7 @@ const academics = [
       { title: "Communication Skills in English and French." }
     ],
     schoolLogo: ifgiaLogo,
+    blurUrl: "LXOWHSaytkj]XnfRoKfQ?]bHRPjZ",
 
   },
 ];
@@ -76,6 +79,8 @@ export const AcademicSection = () => {
                 <div className="relative md:w-[250px] md:h-60 lg:size-[250px] sm:m-4 sm:mb-2 lg:m-2">
                   <Image
                     src={academic.schoolLogo}
+                    blurDataURL={academic.blurUrl}
+                    placeholder="blur"
                     alt={academic.title}
                     className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
                 </div>

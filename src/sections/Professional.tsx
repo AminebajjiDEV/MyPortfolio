@@ -16,13 +16,14 @@ const experiences = [
         date: 'March 2023 - October 2023',
         tasks: 'Tasks & Skills :',
         descriptions: [
-            {title: "Followed up on complaint files until resolutions."},
+            { title: "Followed up on complaint files until resolutions." },
             { title: "Handled client calls and complaints." },
             { title: "Collaborated with team members for solutions." },
             { title: "Developed strong customer relations skills." },
             { title: "Improved listening and situation analysis." },
         ],
         logo: MajorelLogo,
+        blurUrl: "LAS?Gf-;^%%g-;j[jFa|~Uay4;j[",
     },
     {
         title: 'Front-End Developer Intern',
@@ -39,6 +40,7 @@ const experiences = [
             { title: "Enhanced graphic design with Photoshop, Illustrator." },
         ],
         logo: KiomaLogo,
+        blurUrl: "LNNBCtj@WAxv-}j[a#j]wUjuxvWT",
     },
     {
         title: 'Graphic Design Intern',
@@ -53,6 +55,7 @@ const experiences = [
             { title: "Used Sony Vegas for editing." },
         ],
         logo: IdgiLogo,
+        blurUrl: "LYRp5*o3~o%Mxaj[a|fQ.7t7IBRQ",
     },
 ]
 
@@ -67,10 +70,12 @@ export const ProfessionalExperience = () => {
                         <Card key={index} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
                             <div className="flex md:flex-row sm:flex-col sm:items-center">
                                 <div className="relative sm:m-4 sm:mb-2 lg:m-2">
-                                    <Image 
-                                    src={experience.logo}
-                                    alt={experience.title}
-                                    className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
+                                    <Image
+                                        src={experience.logo}
+                                        blurDataURL={experience.blurUrl}
+                                        placeholder="blur"
+                                        alt={experience.title}
+                                        className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl" />
                                 </div>
                                 <div className="flex flex-col px-6 sm:px-2 sm:items-center w-[420px] lg:w-[590px] lg:m-6">
                                     <h3 className="font-serif text-2xl w-full sm:text-[1.3rem] sm:text-center sm:w-[20rem] mt-2 lg:mt-0 md:text-4xl md:text-center md:mt-5 md:w-[23rem] lg:w-[30rem]">

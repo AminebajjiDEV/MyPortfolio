@@ -345,7 +345,12 @@ export const AboutSection = () => {
               <CardHeader title="My Reads"
                 description="One of my favorite books shaping my perspective." />
               <div className="w-32 mx-auto mt-2 md:mt-0">
-                <Image src={MeditationsBC} alt="book cover" />
+                <Image
+                  src={MeditationsBC}
+                  alt="book cover"
+                  placeholder="blur"
+                  className="border border-gray-700 rounded-xl"
+                />
               </div>
 
             </Card>

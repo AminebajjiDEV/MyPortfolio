@@ -12,27 +12,32 @@ import Link from "next/link";
 const certificates = [
   {
     name: "web-Dev-cert",
-    avatar: webDevCert,
+    certImage: webDevCert,
+    blurUrl: "L8R:KP9FxuofM{oft7Rj~qofD%WC",
     link: "https://www.ude.my/UC-246d6033-7607-4763-b0e9-50e98d33bcbe/",
   },
   {
     name: "oci-cert",
-    avatar: ociCert,
+    certImage: ociCert,
+    blurUrl: "L5RC-=?^D4%#Mx$iDiof00.Snhj]",
     link: "https://catalog-education.oracle.com/ords/certview/sharebadge?id=7AB369CB4BC42A6CA0BAE533BE2517B72B12301E86DC9F7BC7329B027C0CF7D2",
   },
   {
     name: "php-cert",
-    avatar: phpCert,
+    certImage: phpCert,
+    blurUrl: "L3R{+000M_%MIUj]t7Rj~q%MD%M{",
     link: "https://ude.my/UC-0685ecf3-8c87-410c-bb5f-39043ef0b188",
   },
   {
     name: "ibm-cert",
-    avatar: ibmCourse,
+    certImage: ibmCourse,
+    blurUrl: "L6OW$:IT00%h%NXBROab00$|~pM|",
     link: "https://www.credly.com/badges/c1783a78-03fe-408f-a279-f7039b067210/linked_in_profile",
   },
   {
     name: "scrum-cert",
-    avatar: scrumCourse,
+    certImage: scrumCourse,
+    blurUrl: "L8R:HID%aeofM{t7ofRj~qWBIUay",
     link: "https://ude.my/UC-513333be-6c02-4acd-8f61-ad913ba2075a",
   },
 ];
@@ -55,10 +60,10 @@ export const CertficateSection = () => {
                   <Link href={certificate.link} target="_blank" >
                     <div className="relative w-[416px] h-[321.45px] object-cover">
                       <Image
-                        src={certificate.avatar}
+                        src={certificate.certImage}
                         alt={certificate.name}
                         placeholder="blur"
-                        fill
+                        blurDataURL={certificate.blurUrl}
                         className="max-h-full rounded-3xl" />
                     </div>
                   </Link>
