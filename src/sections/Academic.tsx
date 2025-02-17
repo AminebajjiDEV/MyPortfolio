@@ -76,13 +76,12 @@ export const AcademicSection = () => {
           {academics.map((academic, index) => (
             <Card key={index} className="px-6 pt-4 pb-1 sm:px-2 md:pt-4 md:px-4 lg:p-10 flex sm:flex-col md:flex-col lg:flex-col items-center">
               <div className="flex md:flex-row sm:flex-col sm:items-center">
-                <div className="relative md:w-[250px] md:h-60 lg:size-[250px] sm:m-4 sm:mb-2 lg:m-2">
+                <div className="relative w-[250px] h-60 md:w-[250px] md:h-60 lg:size-[250px] sm:m-4 sm:mb-2 lg:m-2">
                   <Image
                     src={academic.schoolLogo}
                     blurDataURL={academic.blurUrl}
                     placeholder="blur"
-                    width={250}
-                    height={250}
+                    fill
                     alt={academic.title}
                     className="mt-8 md:m-0 sm:m-0 sm:size-40 md:w-[250px] md:h-60 lg:size-[250px] bg-white rounded-3xl"
                   />

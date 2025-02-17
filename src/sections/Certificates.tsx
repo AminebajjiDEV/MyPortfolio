@@ -58,7 +58,7 @@ export const CertficateSection = () => {
               {certificates.map(certificate => (
                 <Card key={certificate.name} className="max-w-[400px] md:max-w-md p-2 md:p-4 items-center transition duration-300 hover:rotate-1">
                   <Link href={certificate.link} target="_blank" >
-                    <div className="relative w-[416px] h-[321.45px] overflow-hidden rounded-3xl">
+                    <div className="relative lg:w-[400px] h-[321.45px] overflow-hidden md:lg:w-[400px] sm:w-[372px] rounded-3xl">
                       <Image
                         src={certificate.certImage}
                         alt={certificate.name}

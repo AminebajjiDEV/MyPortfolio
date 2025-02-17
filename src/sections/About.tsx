@@ -28,7 +28,7 @@ import GitIcon from "@/assets/icons/tools/git-icon.svg";
 import GithubIcon from "@/assets/icons/tools/github.svg";
 import VisualIcon from "@/assets/icons/tools/visual-studio-code-1.svg";
 import IntelijIcon from "@/assets/icons/tools/intellij-idea-1.svg";
-import EclipseIcon from "@/assets/icons/tools/eclipse-11.svg";
+import EclipseIcon from "@/assets/icons/tools/eclipse.svg";
 import PostmanIcon from "@/assets/icons/tools/Postman.svg";
 import XampIcon from "@/assets/icons/tools/xampp.svg";
 
@@ -41,7 +41,12 @@ import ChromeIcon from "@/assets/icons/tools/chrome.svg";
 
 import VirtualboxIcon from "@/assets/icons/tools/vb.svg";
 import VmwareIcon from "@/assets/icons/tools/vmware-7.svg";
+import CiscoIcon from "@/assets/icons/tools/cisco-icon.svg";
+import WiresharkIcon from "@/assets/icons/tools/wiresharksvg.svg";
 import LinuxIcon from "@/assets/icons/tools/linux-logo-ukslisau.svg";
+import WindowsIcon from "@/assets/icons/tools/windowsLogo.svg";
+import BatchIcon from "@/assets/icons/tools/batch.svg";
+import PowershellIcon from "@/assets/icons/tools/powershell.svg";
 import BashIcon from "@/assets/icons/tools/bash-1.svg";
 import DockerIcon from "@/assets/icons/tools/docker-4.svg";
 import KuberIcon from "@/assets/icons/tools/kubernets.svg";
@@ -173,11 +178,31 @@ const devOpsItems = [
     typeIcon: VmwareIcon,
   },
   {
-    title: 'Bash cmd',
+    title: 'Cisco',
+    typeIcon: CiscoIcon,
+  },
+  {
+    title: 'Wireshark',
+    typeIcon: WiresharkIcon,
+  },
+  {
+    title: 'Bash',
     typeIcon: BashIcon,
   },
   {
-    title: 'Unix OS',
+    title: 'Batch',
+    typeIcon: BatchIcon,
+  },
+  {
+    title: 'Powershell',
+    typeIcon: PowershellIcon,
+  },
+  {
+    title: 'Windows',
+    typeIcon: WindowsIcon,
+  },
+  {
+    title: 'Linux',
     typeIcon: LinuxIcon,
   },
   {
@@ -322,7 +347,7 @@ export const AboutSection = () => {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 title="Beyond the Code"
-                description="Explore my interests and hobbies beyond the digital realm."
+                description="You can rearrange my interests and hobbies 👇."
                 className="" />
 
               <div className="relative flex-1" ref={constraintRef}>
